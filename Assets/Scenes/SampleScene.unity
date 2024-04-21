@@ -626,6 +626,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 312214369}
+  - component: {fileID: 312214370}
   m_Layer: 5
   m_Name: FourthRaw (empty object)
   m_TagString: Untagged
@@ -654,6 +655,39 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -70.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &312214370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312214368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48bffe71a2e31bf49a75d08a10c9ad67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueTexts:
+  - {fileID: 1300546987}
+  - {fileID: 709051642}
+  - {fileID: 1129117932}
+  - {fileID: 916899101}
+  - {fileID: 779536157}
+  - {fileID: 74528073}
+  initialValues:
+  - 500
+  - 25
+  - 0.15
+  - 800
+  - 15
+  - 0.25
+  randomValues:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!1 &334210590
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +869,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 356653266}
+  - component: {fileID: 356653267}
   m_Layer: 5
   m_Name: ThirdRaw (empty object)
   m_TagString: Untagged
@@ -863,6 +898,25 @@ RectTransform:
   m_AnchoredPosition: {x: 6.5, y: 72.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &356653267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356653265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316d92eb710fe3143a0deb18d7678d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oEEText: {fileID: 1859368516}
+  oEEFillAmountBar: {fileID: 1881897719}
+  oEEValue: 25
+  orderQuantityText: {fileID: 1633753546}
+  orderQuantityValue: 250
+  maxOrderQuantityValue: 800
+  orderQuantityBar: {fileID: 1398857811}
 --- !u!1 &376844800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,40 +1761,6 @@ MonoBehaviour:
   zoomOutButton: {fileID: 1707031781}
   nameCard: {fileID: 604771614}
   informativeText: {fileID: 1990171753}
-  textsOfFourthRawValues:
-  - {fileID: 1300546987}
-  - {fileID: 709051642}
-  - {fileID: 1129117932}
-  - {fileID: 916899101}
-  - {fileID: 779536157}
-  - {fileID: 74528073}
-  initialValuesOf4thRaw:
-  - 500
-  - 25
-  - 0.15
-  - 800
-  - 15
-  - 0.25
-  randomValuesOf4thRaw:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  secondRawValuesTexts:
-  - {fileID: 348756695}
-  - {fileID: 1575143581}
-  secondRawValues: 504f1f003f020000
-  orderQuantityText: {fileID: 1633753546}
-  orderQuantityValue: 250
-  maxOrderQuantityValue: 800
-  orderQuantityBar: {fileID: 1398857811}
-  oEEText: {fileID: 1859368516}
-  oEEFillAmountBar: {fileID: 1881897719}
-  oEEValue: 25
-  timer: 0
-  timerOfFourthRaw: 0
 --- !u!1 &646819378
 GameObject:
   m_ObjectHideFlags: 0
@@ -4284,6 +4304,7 @@ GameObject:
   - component: {fileID: 1547640610}
   - component: {fileID: 1547640609}
   - component: {fileID: 1547640608}
+  - component: {fileID: 1547640611}
   m_Layer: 5
   m_Name: AdditionalInfoButton
   m_TagString: Untagged
@@ -4354,19 +4375,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1547640609}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 621747978}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: AdditionalInfoButtonInteraction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1547640609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4405,6 +4414,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547640606}
   m_CullTransparentMesh: 1
+--- !u!114 &1547640611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547640606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c31e9e589f58fa4cb06bb940c6324fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  additionalInfoButton: {fileID: 1547640608}
 --- !u!1 &1575143579
 GameObject:
   m_ObjectHideFlags: 0
@@ -4548,6 +4570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1629924915}
+  - component: {fileID: 1629924916}
   m_Layer: 5
   m_Name: SecondRaw (empty object)
   m_TagString: Untagged
@@ -4576,6 +4599,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 169.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1629924916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629924914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3264634eff9f8be4084ea1650997024f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondRawValuesTexts:
+  - {fileID: 348756695}
+  - {fileID: 1575143581}
+  secondRawValues: 504f1f003f020000
 --- !u!1 &1633753544
 GameObject:
   m_ObjectHideFlags: 0
