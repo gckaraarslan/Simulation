@@ -7,9 +7,10 @@ using UnityEngine.UI;
 
 public class AdditionalInfoButton : MonoBehaviour
 {
-    public Button additionalInfoButton;
+    private Button additionalInfoButton;
     void Start()
     {
+        additionalInfoButton = gameObject.GetComponent<Button>();
         additionalInfoButton.onClick.AddListener(AdditionalInfoButtonInteraction);
     }
     

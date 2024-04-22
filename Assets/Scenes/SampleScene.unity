@@ -4157,7 +4157,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.507
+  m_FillAmount: 0.25
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -4426,7 +4426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c31e9e589f58fa4cb06bb940c6324fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  additionalInfoButton: {fileID: 1547640608}
 --- !u!1 &1575143579
 GameObject:
   m_ObjectHideFlags: 0
@@ -6330,7 +6329,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0

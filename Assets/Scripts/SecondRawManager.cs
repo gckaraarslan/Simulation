@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class SecondRawManager : MonoBehaviour
 {
-    [Header("2nd Raw")] public TextMeshProUGUI[] secondRawValuesTexts = new TextMeshProUGUI[2];
+   
+    public TextMeshProUGUI[] secondRawValuesTexts = new TextMeshProUGUI[2];
     public int[] secondRawValues = new int[2];
 
     void OnEnable()
